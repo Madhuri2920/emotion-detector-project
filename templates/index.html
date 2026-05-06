@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detection</title>
+    <script src="/static/mywebscript.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4ff;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            max-width: 700px;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #2d2395;
+        }
+
+        textarea {
+            width: 90%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #2d2395;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1f176c;
+        }
+
+        #system_response {
+            margin-top: 25px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Emotion Detection AI Web App</h1>
+
+        <p>Enter customer feedback below to detect the emotion.</p>
+
+        <textarea id="textToAnalyze" placeholder="Type your feedback here..."></textarea>
+
+        <br>
+
+        <button onclick="RunSentimentAnalysis()">Analyze Emotion</button>
+
+        <h3 id="system_response"></h3>
+    </div>
+</body>
+</html>
